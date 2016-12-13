@@ -1,6 +1,6 @@
 FROM gliderlabs/alpine:3.4
 
-MAINTAINER blacktop, https://github.com/blacktop
+MAINTAINER blacktop, https://github.com/OutboundMike
 
 ENV GOSU_VERSION 1.10
 ENV GOSU_URL https://github.com/tianon/gosu/releases/download
@@ -112,6 +112,6 @@ VOLUME ["/usr/share/elasticsearch/data"]
 VOLUME ["/etc/logstash/conf.d"]
 VOLUME ["/etc/nginx"]
 
-EXPOSE 80 443 5601 9200 9300
+EXPOSE 80 443 58 587 5601 9200 9300
 
 CMD ["/sbin/tini","--","/usr/bin/supervisord","-c", "/etc/supervisor/supervisord.conf"]
