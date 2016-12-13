@@ -13,7 +13,7 @@ Elastic Stack Dockerfile
 
 ### Getting Started
 
-$ docker run -d --name elstack -p 80:80 -p 9200:9200 blacktop/elastic-stack
+$ docker run -d --name elstack -p 80:80 -p 9200:9200 outboundmike/Docker-Elastic
 
 ##### Now Navigate To
 
